@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+h1 {
+    font-family: inherit;
+    margin: 0;
+}
+
+header {
+    border-bottom: 5px #303030 solid;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 55px;
+    display: block;
+    position: relative;
+}
+
+.navButton {
+    vertical-align: middle;
+    margin-bottom: 0.75em;
+    background-color: purple;
+    border: purple 2px solid;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    padding: 7px;
+    margin-right: 15px;
+    margin-top: 5px;
+    float:right;
+    font-size: 14px;
+    cursor: default;
+}
+
+header img {
+    height: 100%;
+    width: auto;
+    vertical-align: middle;
+    margin-bottom: 0.75em;
+}
+
+.navButton:hover{
+    color: gray;
+    right: 3px;
+}
+
+.form {
+    visibility: hidden;
+    background-color: white;
+    border: purple solid 2px;
+    border-radius: 8px;
+    display: flex;
+    padding: 10px;
+    z-index: 2;
+    opacity: 100%;
+    position: absolute;
+    right: 2px;
+}
+
+.formContent {
+    position: relative;
+    font-size: 14px;
+}
+
+input[type=text], select, input[type=password] {
+    width: 230px;
+    height: 15px;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    font-size: 16px;
+    box-sizing: border-box;
+    display: block;
+}
+
+form button {
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#notfound {
+    height: 100vh;
+    text-align: center;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+#notfound  img {
+    text-align: center;
+    margin: auto;
+    top: 50%; /* poussé de la moitié de hauteur du référent */
+    transform: translateY(50%);
+}
+
+footer {
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%;
+    background-color: #5B2665  ;
+    padding: 0;
+    margin: 0;
+    padding-top:20px;
+    height: flex;
+    max-height: 50px;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 4;
+}
+
+footer p {
+    color: whitesmoke;
+    text-align: center;
+    margin: auto;
+    top: 50%; /* poussé de la moitié de hauteur du référent */
+    transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+  
+.img-box {
+    margin-top: 12px;
+    background-color: white;
+    padding: 10px;
+    overflow: auto;
+}
+  
+img.icone {
+    padding: 5px;
+    width: 25px;
+    vertical-align: middle;
+    margin-bottom: 0.75em;
+    z-index: 2;
+}
+
+img.icone.bin {
+    margin-left: 20px;
+}
+
+.reactions {
+    padding: 0;
+    justify-content: center;
+    overflow: hidden;
+    min-height: 40px;
+    background-color: transparent;
+    display: table-cell; 
+    vertical-align: middle;
+}
+  
+.loveNb {
+    padding-right: 20px;
+    z-index: 2;
+}
+
+#focus-img-box {
+    position: fixed;
+    z-index: 6;
+    background-color: #b0abba;
+    padding: 15px;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    border: 2px solid #4a4554;
+    overflow-y: auto; 
+    max-height: 80vh;  
+}
+
+#mainPic {
+    position: relative; 
+    margin: 0 auto;
+    max-height: 500px;
+}
+
+#mainPicDiv {
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#focus-img-box img.icone {
+    margin-bottom: 0.15em;
+} 
+
+#comments {
+    background-color: whitesmoke;
+    padding: 10px;
+    font-size: 12px;
+    word-break: break-all;
+    overflow: hidden; 
+    overflow-y: auto;
+    max-height: 200px;
+    color: gray;
+    display: block;
+    border: 3px solid white;
+}
+
+.commentAuthor {
+    font-weight: bold;
+    color: #4a4554;
+}
+
+.commentContent { 
+    margin-bottom: 15px;
+}
+
+#commentInput {
+    width: 100%;
+    margin-bottom: 15px;
+}
