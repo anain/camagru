@@ -55,13 +55,3 @@ Class PictureDescription
         unlink($path);
     }
 }
-
-// $path =  __DIR__."/test.png";
-// echo $path;
-// if( file_exists($path))
-// $p = unlink($path);
-// else
-// echo 'notfound';
-// echo $p;
-// $add = '../static/gallery/132.png';
-// @unlink($add);
